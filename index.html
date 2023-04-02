@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staxcryp - Buy and Sell crypto here</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header" data-header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/stacks-stx-seeklogo.com.svg" alt="Staxcryp logo" width="32" height="32">
+                Staxcryp
+            </a>
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link active" data-nav-link>Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-nav-link>Buy Crypto</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-nav-link>Sell Crypto</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-nav-link>Markets</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-nav-link>Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+            <a href="#" class="btn btn-outline">Wallet</a>
+        </div>
+    </header>
+
+
+    <main>
+        <article>
+            <section class="section hero" aria-label="hero" data-section>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="h1 hero-title">Buy & Sell Digital Assets In The Staxcryp</h1>
+                        <p class="hero-text">
+                            Staxcryp is the fastest, easiest and safest way to buy & sell crypto asset exchange.
+                        </p>
+                        <a href="#" class="btn btn-primary">Get Started now</a>
+                    </div>
+
+                    <figure class="hero-banner">
+                        <img src="images/hero-banner.png" alt="hero banner" class="w-100" width="570" height="448">
+                    </figure>
+                </div>
+            </section>
+
+            <section class="section trend" aria-label="crypto trend" data-section>
+                <div class="container">
+                    <div class="trend-tab">
+                        <ul class="tab-nav">
+                            <li>
+                                <button class="tab-btn active">
+                                    Crypto
+                                </button>
+                            </li>
+                            <li>
+                                <button class="tab-btn">
+                                    NFT
+                                </button>
+                            </li>
+                            <li>
+                                <button class="tab-btn">
+                                    Opensea
+                                </button>
+                            </li>
+                            <li>
+                                <button class="tab-btn">
+                                    Stacks
+                                </button>
+                            </li>
+                            <li>
+                                <button class="tab-btn">
+                                    Sandbox
+                                </button>
+                            </li>
+                            <li>
+                                <button class="tab-btn">
+                                    Aave
+                                </button>
+                            </li>
+                            <li>
+                                <button class="tab-btn">
+                                    Solana
+                                </button>
+                            </li>
+                            <li>
+                                <button class="tab-btn">
+                                    Metaverse
+                                </button>
+                            </li>
+                        </ul>
+
+                        <ul class="tab-content">
+                            <li>
+                                <div class="trend-card active">
+                                    <div class="card-title-wrapper">
+                                        <img src="images/coin-1.svg" height="24" width="24" alt="bitcoin logo">
+
+                                        <a href="#" class="card-title">
+                                            Bitcoin <span class="span">BTC/USD</span>
+                                        </a>
+                                    </div>
+                                    <data class="card-value" value="28588.84"> <span class="span1">USD <span
+                                                id="bitcoin"></span></span> </data>
+
+                                    <div class="card-analytics">
+                                        <data class="current-price" value="28588.84"> <span id="bitcoin1"></span> </data>
+
+                                        <div class="badge"  data-card-trend> <span id="bitper"></span> </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="trend-card">
+                                    <div class="card-title-wrapper">
+                                        <img src="images/coin-2.svg" height="24" width="24" alt="ethereum logo">
+
+                                        <a href="#" class="card-title">
+                                            Ethereum <span class="span">ETH/USD</span>
+                                        </a>
+                                    </div>
+                                    <data class="card-value" value="28588.84"><span class="span1">USD <span
+                                        id="ethereum"></span></span> </data>
+
+                                    <div class="card-analytics">
+                                        <data class="current-price" value="28588.84"><span id="ethereum1"></span> </data>
+
+                                        <div class="badge" data-card-trend1><span id="ethper"></span></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="trend-card">
+                                    <div class="card-title-wrapper">
+                                        <img src="images/coin-3.svg" height="24" width="24" alt="tether logo">
+
+                                        <a href="#" class="card-title">
+                                            Tether <span class="span">USDT/USD</span>
+                                        </a>
+                                    </div>
+                                    <data class="card-value"><span class="span1">USD <span
+                                        id="tether"></span></span></data>
+
+                                    <div class="card-analytics">
+                                        <data class="current-price"><span id="tether1"></span> </data>
+
+                                        <div class="badge" data-card-trend2><span id="tetper"></span></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="trend-card">
+                                    <div class="card-title-wrapper">
+                                        <img src="images/coin-4.svg" height="24" width="24" alt="doge logo">
+
+                                        <a href="#" class="card-title">
+                                            Dogecoin <span class="span">Doge/USD</span>
+                                        </a>
+                                    </div>
+                                    <data class="card-value"><span class="span1">USD <span
+                                        id="doge"></span></span></data>
+
+                                    <div class="card-analytics">
+                                        <data class="current-price"><span id="doge1"></span></data>
+
+                                        <div class="badge" data-card-trend><span id="dogper"></span></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section market" aria-label="market" data-section>
+
+
+                <div class="container">
+
+
+                    <div class="title-wrapper">
+                        <h2 class="h2 section-title">Market Update</h2>
+                        <a href="#" class="btn-link">See All Coins</a>
+                    </div>
+
+
+                    <div class="market-tab">
+
+
+                        <ul class="tab-nav">
+                            <li>
+                                <button class="tab-btn active">View All</button>
+                            </li>
+                            <li>
+                                <button class="tab-btn">Metaverse</button>
+                            </li>
+                            <li>
+                                <button class="tab-btn">Commodities</button>
+                            </li>
+                            <li>
+                                <button class="tab-btn">NFT</button>
+                            </li>
+                            <li>
+                                <button class="tab-btn">Futures & Options</button>
+                            </li>
+                            <li>
+                                <button class="tab-btn">Derivatives</button>
+                            </li>
+                        </ul>
+
+
+                        <table class="market-table">
+                            <thead class="table-head">
+                                <tr class="table-row table-title">
+                                    <th class="table-heading">
+                                    </th>
+                                    <th class="table-heading" scope="col">#</th>
+                                    <th class="table-heading" scope="col">Name</th>
+                                    <th class="table-heading" scope="col">Last Price</th>
+                                    <th class="table-heading" scope="col">24h %</th>
+                                    <th class="table-heading" scope="col">Market Cap</th>
+                                    <th class="table-heading" scope="col">Last 7 Days</th>
+                                    <th class="table-heading">
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="table-body">
+                                <tr class="table-row">
+                                    <td class="table-data">
+                                        <button class="add-to-fav" aria-label="Add favrouites" data-add-to-fav>
+                                            <ion-icon name="star-outline" aria-hidden="true"
+                                                class="icon-outline"></ion-icon>
+                                            <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                                        </button>
+                                    </td>
+
+                                    <th class="table-data rank" scope="row">1</th>
+                                    <td class="table-data">
+                                        <div class="wrapper">
+                                            <img src="images/coin-1.svg" width="20" height="20" class="img"
+                                                alt="bitcoin">
+                                            <h3>
+                                                <a href="#" class="coin-name">Bitcoin <span class="span">BTC</span></a>
+                                            </h3>
+                                        </div>
+                                    </td>
+                                    <td class="table-data las-tprice">$28,883</td>
+                                    <td class="table-data last-update green">+2.48%</td>
+                                    <td class="table-data market-cap">$830,648,328,658</td>
+                                    <td class="table-data">
+                                        <img src="images/chart-1.svg" width="100" height="40" alt="chart" class="chart">
+                                    </td>
+                                    <td class="table-data">
+                                        <button class="btn btn-outline">Trade</button>
+                                    </td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <td class="table-data">
+                                        <button class="add-to-fav" aria-label="Add favrouites" data-add-to-fav>
+                                            <ion-icon name="star-outline" aria-hidden="true"
+                                                class="icon-outline"></ion-icon>
+                                            <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                                        </button>
+                                    </td>
+
+                                    <th class="table-data rank" scope="row">2</th>
+                                    <td class="table-data">
+                                        <div class="wrapper">
+                                            <img src="images/coin-2.svg" width="20" height="20" class="img"
+                                                alt="ethereum">
+                                            <h3>
+                                                <a href="#" class="coin-name">Ethereum <span class="span">ETH</span></a>
+                                            </h3>
+                                        </div>
+                                    </td>
+                                    <td class="table-data last-price">$28,883</td>
+                                    <td class="table-data last-update red">-2.48%</td>
+                                    <td class="table-data market-cap">$830,648,328,658</td>
+                                    <td class="table-data">
+                                        <img src="images/chart-2.svg" width="100" height="40" alt="chart" class="chart">
+                                    </td>
+                                    <td class="table-data">
+                                        <button class="btn btn-outline">Trade</button>
+                                    </td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <td class="table-data">
+                                        <button class="add-to-fav" aria-label="Add favrouites" data-add-to-fav>
+                                            <ion-icon name="star-outline" aria-hidden="true"
+                                                class="icon-outline"></ion-icon>
+                                            <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                                        </button>
+                                    </td>
+
+                                    <th class="table-data rank" scope="row">3</th>
+                                    <td class="table-data">
+                                        <div class="wrapper">
+                                            <img src="images/coin-3.svg" width="20" height="20" class="img"
+                                                alt="tether">
+                                            <h3>
+                                                <a href="#" class="coin-name">Tether <span class="span">USDT</span></a>
+                                            </h3>
+                                        </div>
+                                    </td>
+                                    <td class="table-data last-price">$28,883</td>
+                                    <td class="table-data last-update green">+2.48%</td>
+                                    <td class="table-data market-cap">$830,648,328,658</td>
+                                    <td class="table-data">
+                                        <img src="images/chart-1.svg" width="100" height="40" alt="chart" class="chart">
+                                    </td>
+                                    <td class="table-data">
+                                        <button class="btn btn-outline">Trade</button>
+                                    </td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <td class="table-data">
+                                        <button class="add-to-fav" aria-label="Add favrouites" data-add-to-fav>
+                                            <ion-icon name="star-outline" aria-hidden="true"
+                                                class="icon-outline"></ion-icon>
+                                            <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                                        </button>
+                                    </td>
+
+                                    <th class="table-data rank" scope="row">4</th>
+                                    <td class="table-data">
+                                        <div class="wrapper">
+                                            <img src="images/coin-4.svg" width="20" height="20" class="img"
+                                                alt="Binance">
+                                            <h3>
+                                                <a href="#" class="coin-name">Binance <span class="span">BNB</span></a>
+                                            </h3>
+                                        </div>
+                                    </td>
+                                    <td class="table-data last-price">$28,883</td>
+                                    <td class="table-data last-update green">+2.48%</td>
+                                    <td class="table-data market-cap">$830,648,328,658</td>
+                                    <td class="table-data">
+                                        <img src="images/chart-1.svg" width="100" height="40" alt="chart" class="chart">
+                                    </td>
+                                    <td class="table-data">
+                                        <button class="btn btn-outline">Trade</button>
+                                    </td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <td class="table-data">
+                                        <button class="add-to-fav" aria-label="Add favrouites" data-add-to-fav>
+                                            <ion-icon name="star-outline" aria-hidden="true"
+                                                class="icon-outline"></ion-icon>
+                                            <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                                        </button>
+                                    </td>
+
+                                    <th class="table-data rank" scope="row">5</th>
+                                    <td class="table-data">
+                                        <div class="wrapper">
+                                            <img src="images/coin-5.svg" width="20" height="20" class="img"
+                                                alt="solana">
+                                            <h3>
+                                                <a href="#" class="coin-name">Solana <span class="span">SOL</span></a>
+                                            </h3>
+                                        </div>
+                                    </td>
+                                    <td class="table-data last-price">$28,883</td>
+                                    <td class="table-data last-update green">+2.48%</td>
+                                    <td class="table-data market-cap">$830,648,328,658</td>
+                                    <td class="table-data">
+                                        <img src="images/chart-1.svg" width="100" height="40" alt="chart" class="chart">
+                                    </td>
+                                    <td class="table-data">
+                                        <button class="btn btn-outline">Trade</button>
+                                    </td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <td class="table-data">
+                                        <button class="add-to-fav" aria-label="Add favrouites" data-add-to-fav>
+                                            <ion-icon name="star-outline" aria-hidden="true"
+                                                class="icon-outline"></ion-icon>
+                                            <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                                        </button>
+                                    </td>
+
+                                    <th class="table-data rank" scope="row">6</th>
+                                    <td class="table-data">
+                                        <div class="wrapper">
+                                            <img src="images/coin-6.svg" width="20" height="20" class="img"
+                                                alt="ripple">
+                                            <h3>
+                                                <a href="#" class="coin-name">Ripple <span class="span">XRP</span></a>
+                                            </h3>
+                                        </div>
+                                    </td>
+                                    <td class="table-data last-price">$28,883</td>
+                                    <td class="table-data last-update green">+2.48%</td>
+                                    <td class="table-data market-cap">$830,648,328,658</td>
+                                    <td class="table-data">
+                                        <img src="images/chart-1.svg" width="100" height="40" alt="chart" class="chart">
+                                    </td>
+                                    <td class="table-data">
+                                        <button class="btn btn-outline">Trade</button>
+                                    </td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <td class="table-data">
+                                        <button class="add-to-fav" aria-label="Add favrouites" data-add-to-fav>
+                                            <ion-icon name="star-outline" aria-hidden="true"
+                                                class="icon-outline"></ion-icon>
+                                            <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                                        </button>
+                                    </td>
+
+                                    <th class="table-data rank" scope="row">7</th>
+                                    <td class="table-data">
+                                        <div class="wrapper">
+                                            <img src="images/stacks-stx-seeklogo.com.svg" width="20" height="20"
+                                                class="img" alt="Stacks">
+                                            <h3>
+                                                <a href="#" class="coin-name">Stacks <span class="span">STX</span></a>
+                                            </h3>
+                                        </div>
+                                    </td>
+                                    <td class="table-data last-price">$28,883</td>
+                                    <td class="table-data last-update green">+2.48%</td>
+                                    <td class="table-data market-cap">$830,648,328,658</td>
+                                    <td class="table-data">
+                                        <img src="images/chart-1.svg" width="100" height="40" alt="chart" class="chart">
+                                    </td>
+                                    <td class="table-data">
+                                        <button class="btn btn-outline">Trade</button>
+                                    </td>
+                                </tr>
+
+                                <tr class="table-row">
+                                    <td class="table-data">
+                                        <button class="add-to-fav" aria-label="Add favrouites" data-add-to-fav>
+                                            <ion-icon name="star-outline" aria-hidden="true"
+                                                class="icon-outline"></ion-icon>
+                                            <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                                        </button>
+                                    </td>
+
+                                    <th class="table-data rank" scope="row">8</th>
+                                    <td class="table-data">
+                                        <div class="wrapper">
+                                            <img src="images/coin-8.svg" width="20" height="20" class="img"
+                                                alt="avalanche">
+                                            <h3>
+                                                <a href="#" class="coin-name">Avalanche <span
+                                                        class="span">AVAX</span></a>
+                                            </h3>
+                                        </div>
+                                    </td>
+                                    <td class="table-data last-price">$28,883</td>
+                                    <td class="table-data last-update green">+2.48%</td>
+                                    <td class="table-data market-cap">$830,648,328,658</td>
+                                    <td class="table-data">
+                                        <img src="images/chart-1.svg" width="100" height="40" alt="chart" class="chart">
+                                    </td>
+                                    <td class="table-data">
+                                        <button class="btn btn-outline">Trade</button>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+            <section class="section instruction" aria-label="instruction" data-section>
+                <div class="container">
+                    <h2 class="h2 section-title">
+                        How It Work
+                    </h2>
+                    <p class="section-text">
+                        Stacks is a production-ready library of stackable content blocks built in React Native.
+                    </p>
+
+                    <ul class="instruction-list">
+                        <li>
+                            <div class="instruction-card">
+                                <figure class="card-banner">
+                                    <img src="images/instruction-1.png" alt="Step 1" width="96" height="96"
+                                        loading="lazy" class="img">
+                                </figure>
+                                <p class="card-subtitle">Step 1</p>
+
+                                <h3 class="h3 card-title">Download</h3>
+
+                                <p class="card-text">
+                                    Stacks is a production-ready library of stackable content blocks built in React
+                                    Native.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="instruction-card">
+                                <figure class="card-banner">
+                                    <img src="images/instruction-2.png" alt="Step 2" width="96" height="96"
+                                        loading="lazy" class="img">
+                                </figure>
+                                <p class="card-subtitle">Step 2</p>
+
+                                <h3 class="h3 card-title">Connect Wallet</h3>
+
+                                <p class="card-text">
+                                    Stacks is a production-ready library of stackable content blocks built in React
+                                    Native.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="instruction-card">
+                                <figure class="card-banner">
+                                    <img src="images/instruction-3.png" alt="Step 3" width="96" height="96"
+                                        loading="lazy" class="img">
+                                </figure>
+                                <p class="card-subtitle">Step 3</p>
+
+                                <h3 class="h3 card-title">Start Trading</h3>
+
+                                <p class="card-text">
+                                    Stacks is a production-ready library of stackable content blocks built in React
+                                    Native.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="instruction-card">
+                                <figure class="card-banner">
+                                    <img src="images/instruction-4.png" alt="Step 3" width="96" height="96"
+                                        loading="lazy" class="img">
+                                </figure>
+                                <p class="card-subtitle">Step 4</p>
+
+                                <h3 class="h3 card-title">Earn Money</h3>
+
+                                <p class="card-text">
+                                    Stacks is a production-ready library of stackable content blocks built in React
+                                    Native.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="section about" aria-label="about" data-section>
+                <div class="container">
+                    <figure class="about-banner">
+                        <img src="images/about-banner.png" width="748" height="436" loading="lazy" alt="about banner"
+                            class="w-100">
+                    </figure>
+
+                    <div class="about-content">
+                        <h2 class="h2 section-title">What is Staxcryp</h2>
+
+                        <p class="section-text">
+                            Experience a variety of trading on Bitcost. You can use various types of coin transactions
+                            such as Spot Trade, Futures Trade, P2P, Staking, Mining, and margin.
+                        </p>
+
+                        <ul class="section-list">
+                            <li class="section-item">
+                                <div class="title-wrapper">
+                                    <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                                    <h3 class="h3 list-title">
+                                        View real-time cryptocurrency prices
+                                    </h3>
+                                </div>
+
+                                <p class="item-text">
+                                    Experience a variety of trading on Bitcost. You can use various types of coin
+                                    transactions such as Spot Trade, Futures Trade, P2P, Staking, Mining, and margin.
+                                </p>
+
+
+                            </li>
+
+                            <li class="section-item">
+                                <div class="title-wrapper">
+                                    <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                                    <h3 class="h3 list-title">
+                                        Buy and sell BTC, ETH, XRP, STX, Etc...
+                                    </h3>
+                                </div>
+
+                                <p class="item-text">
+                                    Experience a variety of trading on Bitcost. You can use various types of coin
+                                    transactions such as Spot Trade, Futures Trade, P2P, Staking, Mining, and margin.
+                                </p>
+
+
+                            </li>
+
+                        </ul>
+
+                        <a href="#" class="btn btn-primary">Explore More</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section app" aria-label="app" data-section>
+                <div class="container">
+
+                    <div class="app-content">
+                        <h2 class="h2 section-title">Free Your Money & Invest With Confidence</h2>
+
+                        <p class="section-text">With Cryptor Trade, you can be sure your trading skills are matched</p>
+
+                        <ul class="section-list">
+                            <li class="section-item">
+                                <div class="title-wrapp">
+                                    <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                                    <h3 class="h3 item-title">Buy, Sell, And Trade On The Go</h3>
+                                </div>
+                                <p class="item-text">
+                                    Manage Your Holdings From Your Mobile Device
+                                </p>
+                            </li>
+
+                            <li class="section-item">
+                                <div class="title-wrapp">
+                                    <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                                    <h3 class="h3 item-title">Take Control Of Your Wealth</h3>
+                                </div>
+                                <p class="item-text">
+                                    Rest Assured You (And Only You) Have Access To Your Funds
+                                </p>
+                            </li>
+                        </ul>
+
+                        <div class="app-wrapper">
+                            <a href="#">
+                                <img src="images/googleplay.png" alt="get it on google play" width="135" height="48"
+                                    loading="lazy">
+                            </a>
+                            <a href="#">
+                                <img src="images/appstore.png" alt="available on app store" width="120" height="48"
+                                    loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="app-banner">
+                        <img src="images/app-banner.png" alt="app banner" width="300" height="526" class="w-100 imgbann"
+                            loading="lazy">
+
+                        <span class="span">Scan To Download</span>
+                    </div>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top" data-section>
+            <div class="container">
+
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="images/stacks-stx-seeklogo.com.svg" alt="Staxcryp logo" width="50" height="50">
+                        Staxcryp
+                    </a>
+
+                    <h2 class="footer-title">Contact us</h2>
+
+                    <a href="tel: +91 0123456789" class="footer-contact-list">+91 0123456789</a>
+
+                    <a href="mailto:hi.staxcryp@gmail.com" class="footer-contact-list">hi.staxcryp@gmail.com</a>
+
+                    <address class="footer-contact-link">
+                        1086/896 vivek vihar jaipur 302012
+                    </address>
+                </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">
+                            Products
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Spot</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Inverse Perpetual</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">
+                            USDT Perpetual</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Exchange</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Launchpad</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Stacks Pay</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">
+                            Services
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Buy Crypto</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Markets</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Tranding Fee</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Affiliate Program</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Referral Program</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">API</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">
+                            Support
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Help Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">User Feedback</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Bybit Learn</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Submit a request</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">API Documentation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Trading Rules</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">
+                            About Us
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">About Bybit</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Authenticity Check</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Business Contactst</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    &copy; 2023 Staxcryp All Rights Reserved by <a href="#" class="copyright-link">me</a>
+                </p>
+
+                <ul class="social-list">
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="./js/script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
