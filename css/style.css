@@ -221,6 +221,8 @@ body.active { overflow: hidden; }
     background-color: var(--medium-sea-green);
 }
 
+
+
 .last-update.red{color: var(--presian-red);}
 
 .last-update.green{color: var(--medium-sea-green);}
